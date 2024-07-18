@@ -1,10 +1,10 @@
 # dkp
 1.Try to find out whether Main() function is predefined or user defined ?
 
---> Main() Function is Predefined Function but The body or logic inside the main method is user-defined.
+--> Main() Function is Predefined Function but The body or logic inside the main method is user-defined
 
 
-2.if else concept using grade program.
+2. grade program using if else.
 
 import java.util.*;
 
@@ -14,7 +14,6 @@ public class Task1 {
         System.out.println("Enter a Marks");
         int marks=scanner.nextInt();
         char grade;
-
         if (marks >= 90) {
             grade = 'A';
         }
@@ -30,14 +29,13 @@ public class Task1 {
         else {
             grade = 'F';
         }
-
         System.out.println("The grade for Marks " + marks + " is: " + grade);
     }
 }
 
-3.Loop Statement
+3.Loop Statement(for,while,do-while)
 
- (a)For loop:
+ (1)For loop:
 
    public class ForLoopExample {
     public static void main(String[] args) {
@@ -48,7 +46,7 @@ public class Task1 {
     }
 }
 
- (b)While loop:
+ (2)While loop:
 
    public class WhileLoopExample {
     public static void main(String[] args) {
@@ -60,7 +58,7 @@ public class Task1 {
     }
 }
 
-  (c)Do-While loop:
+  (3)Do-While loop:
 
 
    public class DoWhileLoopExample {
@@ -81,13 +79,13 @@ public class Task1 {
 public class Divide {
     public static void main(String[] args) {
          Scanner scanner=new Scanner(System.in);
-         System.out.println("Enter a Number");
-         int a=scanner.nextInt();
-         System.out.println("Enter a Marks");
-         int b=scanner.nextInt();
-         float c;
-         c=(float)a/b;
-         System.out.println(c);
+         System.out.println("Enter x Number");
+         int x=scanner.nextInt();
+         System.out.println("Enter x Marks");
+         int y=scanner.nextInt();
+         float z;
+         z=(float)x/y;
+         System.out.println(z);
 
         
     }
