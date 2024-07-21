@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class SUPPLY {
+    // Data members
+    private int code;
+    private String foodName;
+    private String sticker;
+    private String foodType;
+
+    // Member function to assign FoodType based on Sticker
+    private void GetType() {
+        switch (sticker.toLowerCase()) {
+            case "green":
+                foodType = "Vegetarian";
+                break;
+            case "yellow":
+                foodType = "Contains Egg";
+                break;
+            case "red":
+                foodType = "Non Vegetarian";
+                break;
+            default:
+                foodType = "Unknown";
+                break;
+        }
+    }
+
+    // Function to allow user to enter values
+    public void FoodIn() {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter code: ");
+        code = scanner.nextInt();
+        scanner.nextLine();  // Consume newline
+
+        System.out.print("Enter food name: ");
+        foodName = scanner.nextLine();
+
+        System.out.print("Enter sticker (Green/Yellow/Red): ");
+        sticker = scanner.nextLine();
+
+        GetType();
+    }
+
+    // Function to display the content of all data members
+    public void FoodOut() {
+        System.out.println("Code: " + code);
+        System.out.println("Food Name: " + foodName);
+        System.out.println("Sticker: " + sticker);
+        System.out.println("Food Type: " + foodType);
+    }
+
+    // Main method for testing
+    public static void main(String[] args) {
+        SUPPLY supply = new SUPPLY();
+        supply.FoodIn();
+        supply.FoodOut();
+    }
+}
